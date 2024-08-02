@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>MGC - MyGovernmentContracts</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +29,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="logo.webp">
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -36,10 +41,10 @@
             <nav>
               <ul>
                 <li>
-                  <a href="" class="gmail-nav">hello@coleygsa.com</a>
+                  <a href="mailto:hello@MyGovernmentContracts.com" class="gmail-nav">hello@MyGovernmentContracts.com</a>
                 </li>
                 <li>
-                  <a href="" class="phone-nav">+1 (210) 402-6766</a>
+                  <a href="tel:(407) 561-2094" class="phone-nav">(407) 561-2094</a>
                 </li>
               </ul>
             </nav>
@@ -49,19 +54,35 @@
       <div class="header-2">
         <div class="container">
           <div class="col-lg-2">
-            <img height="34px" src="cgcs_logo.svg" alt="Not Found" />
+            <img onclick="location.replace('index.html')" height="50px" src="IMG_5632.png" alt="Not Found" />
           </div>
           <div class="col-lg-6">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Contact</a>
-            <button>Schedule a Free Consult</button>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <button onclick="window.location='consultation.html'">Schedule a Free Consult</button>
           </div>
         </div>
       </div>
       <div class="respo-header">
-        <img src="cgcs_logo.svg" height="30px" alt="not found" />
-        <i class="bi bi-list"></i>
+        <img src="IMG_5632.png" height="45px" alt="not found" />
+        <a class="text-black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="bi bi-list"></i></a>        
+      
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <button onclick="window.location='consultation.html'">Schedule a Free Consult</button>
+          </div>
+       
+        </div>
       </div>
     </header>
     <main>
@@ -69,30 +90,31 @@
         <div class="container">
           <div class="col-lg-6 pt-lg-5">
             <h1>
-              Accelerate & Sustain Success with Your GSA Schedule Contract
+              Accelerate & Sustain Success with Your MGC Schedule Contract
             </h1>
             <p class="pe-5">
-              Coley GCS provides GSA Contract Consulting, Coaching, and Training
-              Services since 2001.
+              MyGovernmentContracts.com GCS provides MGC Contract Consulting, Coaching, and Training
+              Services since 1994.
             </p>
-            <button>Try Our GSA Readiness Quiz!</button>
+            <button>Try Our MGC Readiness Quiz!</button>
           </div>
           <div class="col-lg-6">
             <div class="main-form">
               <h2>Have questions? Reach out below.</h2>
               <div class="mt-5">
-                <input type="text" placeholder="Your Company Name" />
-                <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Last Name" />
-                <input type="text" placeholder="Phone Number" />
+                <form class="w-100 " action="thankyou.html" >
+                <input type="text" required placeholder="Your Company Name" />
+                <input type="text" required placeholder="First Name" />
+                <input type="text" required placeholder="Last Name" />
+                <input type="number" placeholder="Phone Number" />
                 <h6 class="mt-2">How Can We Help?*</h6>
-                <select name="" id="">
+                <select required>
                   <option hidden>Select One</option>
-                  <option value="Need a New GSA Schedule">
-                    Need a New GSA Schedule
+                  <option value="Need a New MGC Schedule">
+                    Need a New MGC Schedule
                   </option>
-                  <option value="Help with my Existing GSA Schedule">
-                    Help with my Existing GSA Schedule
+                  <option value="Help with my Existing MGC Schedule">
+                    Help with my Existing MGC Schedule
                   </option>
                   <option value="Help with my IDIQ/GWAC Contracts">
                     Help with my IDIQ/GWAC Contracts
@@ -105,8 +127,12 @@
                     I need Business Development support
                   </option>
                 </select>
-                <h6 class="mt-2">Please verify your request*</h6>
-                <button>Submit</button>
+                <h6 class="mt-2">Please Verify Your Request?*</h6>
+                <div class="g-recaptcha" data-sitekey="6LffHh4qAAAAADa2OfL9GJ8bAtpRva3okZKWilmg"></div>
+                <br/>
+                
+                <button type="submit">Submit</button>
+              </form>
               </div>
             </div>
           </div>
@@ -115,15 +141,15 @@
       <section class="section-2">
         <div class="container d-flex flex-wrap">
             <div class="col-lg-5">
-                <img fetchpriority="high" decoding="async" width="388px" height="388px" src="https://www.coleygsa.com/wp-content/uploads/2024/06/cgcs-capitol-1.jpg" alt="" title="cgcs-capitol (1)" srcset="https://www.coleygsa.com/wp-content/uploads/2024/06/cgcs-capitol-1.jpg 800w, https://www.coleygsa.com/wp-content/uploads/2024/06/cgcs-capitol-1-480x480.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw" class="wp-image-40999">
+                <img fetchpriority="high" decoding="async" width="388px" height="388px" src="image184.png" alt="nit" >
             </div>
             <div class="col-lg-6">
-                <h3>GSA Schedule Consulting and Services</h3>
+                <h3>MGC Schedule Consulting and Services</h3>
                 <div class="accordion-container">
                     <details >
                       <summary>
                         <span class="accordion-title">
-                            Get a GSA Schedule
+                            Get a MGC Schedule
                         </span>
                         <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -131,13 +157,13 @@
                           </svg></span>
                       </summary>
                       <div class="accordion-content">
-                        Coley will help you win a GSA Schedule contract. We provide flexible solutions  to support your GSA Schedule acquisition efforts. From all inclusive support, hourly guidance or a full review of your offer package, we can support you at any level of service you need to get on GSA Schedule. Our team can assemble, facilitate and/or negotiate a winning GSA Schedule contract on your behalf.
+                        MyGovernmentContracts.com will help you win a MGC Schedule contract. We provide flexible solutions  to support your MGC Schedule acquisition efforts. From all inclusive support, hourly guidance or a full review of your offer package, we can support you at any level of service you need to get on MGC Schedule. Our team can assemble, facilitate and/or negotiate a winning MGC Schedule contract on your behalf.
                       </div>
                     </details>
                     <details>
                       <summary>
                         <span class="accordion-title">
-                            Modify my GSA Schedule
+                            Modify my MGC Schedule
                         </span>
                         <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -145,63 +171,63 @@
                           </svg></span>
                       </summary>
                       <div class="accordion-content">
-                        Add or delete SINs from your existing GSA contract and remove outdated products to keep your GSA catalog updated. Update your GSA pricing to  increase your competitive edge. Coley GCS will prepare documentation, negotiate on your behalf, and update your GSA pricelist.
+                        Add or delete SINs from your existing MGC contract and remove outdated products to keep your MGC catalog updated. Update your MGC pricing to  increase your competitive edge. MyGovernmentContracts.com GCS will prepare documentation, negotiate on your behalf, and update your MGC pricelist.
                       </div>
                     </details>
                     <details>
                       <summary>
-                        <span class="accordion-title">Upload or Modify my GSA Pricelist</span>
+                        <span class="accordion-title">Upload or Modify my MGC Pricelist</span>
                         <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M6 9l6 6l6 -6" />
                           </svg></span>
                       </summary>
-                      <div class="accordion-content">It is a requirement for your your approved GSA Schedule pricelist be kept current. Coley Consultants can support your GSA catalog need.</div>
+                      <div class="accordion-content">It is a requirement for your your approved MGC Schedule pricelist be kept current. MyGovernmentContracts.com Consultants can support your MGC catalog need.</div>
                     </details>
                     <details>
                       <summary>
-                        <span class="accordion-title">Renew my GSA Schedule Contract</span>
+                        <span class="accordion-title">Renew my MGC Schedule Contract</span>
                         <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M6 9l6 6l6 -6" />
                           </svg></span>
                       </summary>
-                      <div class="accordion-content">GSA contractors have the option to renew their GSA Schedule every 5 years before the GSA contract expires at the 20 year mark. Get our expert GSA advisors to support you through the option to extend your GSA contract so it is completed as smooth as possible.
+                      <div class="accordion-content">MGC contractors have the option to renew their MGC Schedule every 5 years before the MGC contract expires at the 20 year mark. Get our expert MGC advisors to support you through the option to extend your MGC contract so it is completed as smooth as possible.
                     </div>
                     </details>
                     <details>
                       <summary>
-                        <span class="accordion-title">Transfer my GSA Contract - Novation</span>
+                        <span class="accordion-title">Transfer my MGC Contract - Novation</span>
                         <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M6 9l6 6l6 -6" />
                           </svg></span>
                       </summary>
-                      <div class="accordion-content">If you company changed owners or legally change names, you may be required to transfer your GSA Schedule. You must obtain the Government’s approval to transfer the GSA Schedule by executing a formal “Novation Agreement.”  Our GSA Schedule experts can make sure this process is done right.</div>
+                      <div class="accordion-content">If you company changed owners or legally change names, you may be required to transfer your MGC Schedule. You must obtain the Government’s approval to transfer the MGC Schedule by executing a formal “Novation Agreement.”  Our MGC Schedule experts can make sure this process is done right.</div>
                     </details>
                     <details>
                         <summary>
-                          <span class="accordion-title">Get Turn-key GSA Schedule Support</span>
+                          <span class="accordion-title">Get Turn-key MGC Schedule Support</span>
                           <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                               <path d="M6 9l6 6l6 -6" />
                             </svg></span>
                         </summary>
-                        <div class="accordion-content">Coley’s GSA TotalSupport™ offers your team peace of mind by delivering an integrated, end-to-end GSA contract management solution designed to eliminate compliance risks, minimize day-to-day administrative burden, and maximize GSA Schedule return on investment.</div>
+                        <div class="accordion-content">MyGovernmentContracts.com’s MGC TotalSupport™ offers your team peace of mind by delivering an integrated, end-to-end MGC contract management solution designed to eliminate compliance risks, minimize day-to-day administrative burden, and maximize MGC Schedule return on investment.</div>
                       </details>
                       <details>
                         <summary>
-                          <span class="accordion-title">GSA Schedule Contract Compliance</span>
+                          <span class="accordion-title">MGC Schedule Contract Compliance</span>
                           <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                               <path d="M6 9l6 6l6 -6" />
                             </svg></span>
                         </summary>
-                        <div class="accordion-content">Have GSA Schedule Consultant help you ensure if you are compliant with the terms and conditions of your GSA Scheduled contract before GSA sends a visit. Our Audit Guard service will help uncover areas of potential non-compliance and we will provide you with recommendations and actions required to ensure you are compliant.</div>
+                        <div class="accordion-content">Have MGC Schedule Consultant help you ensure if you are compliant with the terms and conditions of your MGC Scheduled contract before MGC sends a visit. Our Audit Guard service will help uncover areas of potential non-compliance and we will provide you with recommendations and actions required to ensure you are compliant.</div>
                       </details>
                       <details>
                         <summary>
-                          <span class="accordion-title">GSA Schedule Consulting</span>
+                          <span class="accordion-title">MGC Schedule Consulting</span>
                           <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                               <path d="M6 9l6 6l6 -6" />
@@ -211,13 +237,13 @@
                       </details>
                       <details>
                         <summary>
-                          <span class="accordion-title">Request OnDemand GSA Schedule Training</span>
+                          <span class="accordion-title">Request OnDemand MGC Schedule Training</span>
                           <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                               <path d="M6 9l6 6l6 -6" />
                             </svg></span>
                         </summary>
-                        <div class="accordion-content">Coley GCS, through our FedMap program offers a variety of training available to our community of government contractors.  Access a catalog of on-demand, online courses. Membership is free and Coley GSA Contracting experts host monthly discussions to address GSA Schedule holder’s questions.</div>
+                        <div class="accordion-content">MyGovernmentContracts.com GCS, through our FedMap program offers a variety of training available to our community of government contractors.  Access a catalog of on-demand, online courses. Membership is free and MyGovernmentContracts.com MGC Contracting experts host monthly discussions to address MGC Schedule holder’s questions.</div>
                       </details>
                   </div>
             </div>
@@ -225,43 +251,48 @@
       </section>
       <section class="section-3">
        <div class="container">
-        <h3>Expert GSA Schedule Contracting Services</h3>
-        <p class="text-black mt-4">At Coley GCS, we provide GSA Schedule consulting, coaching and training services. We ensure that these services are tailored to meet your needs. Since 2001 we have helped clients understand and navigate the intricacies of government contracting. You can trust our GSA Schedule advisors to provide expert support and represent your interests throughout the GSA Schedule acquisition, renewal, contract compliance and ongoing management process.
+        <h3>Expert MGC Schedule Contracting Services
+        </h3>
+        <p class="text-black mt-4">At MyGovernmentContracts.com we provide MGC Schedule consulting, coaching and training services. We ensure that these services are tailored to meet your needs. Since 2001 we have helped clients understand and navigate the intricacies of government contracting. You can trust our MGC Schedule advisors to provide expert support and represent your interests throughout the MGC Schedule acquisition, renewal, contract compliance and ongoing management process.
+          Our team of advisors have years of experience in managing government contracts and will provide your team with unmatched guidance and insights. Our strategic approach helps your company accelerate and sustain government contracting success. So, if you are in the search for leading Government Contract Consulting firms or MGC Schedule Consultants, contact us today! Take the word of our existing clients, we are one of the Best MGC Consultants you will find!
+          
 
-            Our team of advisors have years of experience in managing government contracts and will provide your team with unmatched guidance and insights. Our strategic approach helps your company accelerate and sustain government contracting success. So, if you are in the search for leading Government Contract Consulting firms or GSA Schedule Consultants, contact us today! Take the word of our existing clients, we are one of the Best GSA Consultants you will find!</p>
+            Our team of advisors have years of experience in managing government contracts and will provide your team with unmatched guidance and insights. Our strategic approach helps your company accelerate and sustain government contracting success. So, if you are in the search for leading Government Contract Consulting firms or MGC Schedule Consultants, contact us today! Take the word of our existing clients, we are one of the Best MGC Consultants you will find!</p>
             <div class="d-flex justify-content-around mt-5 gap-4">
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4 sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M14.2718 10.445L18 2M9.31612 10.6323L5 2M12.7615 10.0479L8.835 2M14.36 2L13.32 4.5M6 16C6 19.3137 8.68629 22 12 22C15.3137 22 18 19.3137 18 16C18 12.6863 15.3137 10 12 10C8.68629 10 6 12.6863 6 16Z" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <h4>Get a GSA Schedule</h4>
-                    <p class="text-black">Our team helps you win a GSA schedule contract as seamless as possible.</p>
+                    <h4>Get a MGC Schedule</h4>
+                    <p class="text-black">Our team helps you win a MGC schedule contract as seamless as possible.</p>
                 </div>
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4 sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffcc00"><path d="M9 11L12 14L20 6" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C12.9473 4 13.8561 4.16464 14.6994 4.46686" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <h4>Manage a GSA Schedule</h4>
-                    <p class="text-black">Ongoing support to keep your GSA contract up-to-date, competitive and compliant.</p>
+                    <h4>Manage a MGC Schedule</h4>
+                    <p class="text-black">Ongoing support to keep your MGC contract up-to-date, competitive and compliant.</p>
                 </div>
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4   sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffcc00"><path d="M20 20H4V4" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16.5L12 9L15 12L19.5 7.5" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <h4>GSA Schedule Solutions</h4>
-                    <p class="text-black">Update your GSA catalog to boost competitiveness and win more federal business.</p>
+                    <h4>MGC Schedule Solutions</h4>
+                    <p class="text-black">Update your MGC catalog to boost competitiveness and win more federal business.</p>
                 </div>
             </div>
        </div>
       </section>
       <section class="section-4 ">
         <div class="container">
-        <h3>Coley Delivers</h3>
-        <p class="text-black  w-100 mt-3">Our track record says it all—our GSA Schedule services delivers on our promises and work hard for our customers’ success. That’s why almost 80% of new clients come from existing customer referrals.</p>
+        <h3>MyGovernmentContracts.com Delivers
+        </h3>
+        <p class="text-black  w-100 mt-3">Our track record says it all—our MGC Schedule services delivers on our promises and work hard for our customers’ success. That’s why almost 80% of new clients come from existing customer referrals.
+        </p>
         <div class="d-flex flex-wrap  sec-4-boxes gap-5 justify-content-center mt-5 ">
 
     <div class="col-lg-3 col-md-5 col-sm-5 col-12  sec-4-box">
 <span>97%</span>
 <h4>Reduced Client Efforts</h4>
-<p>We’ve reduced client efforts by 97% when acquiring and maintaining a GSA Schedule</p>
+<p>We’ve reduced client efforts by 97% when acquiring and maintaining a MGC Schedule</p>
     </div>
     <div class="col-lg-3 col-md-5 col-sm-5 col-12  sec-4-box">
         <span>100%</span>
-        <h4>GSA Contract Award Rate</h4>
+        <h4>MGC Contract Award Rate</h4>
         <p>Award Rate
             We’ve achieved an 100% acquisition rate in our contract acquisition service.</p>
             </div>
@@ -273,7 +304,7 @@
                     <div class="col-lg-3 col-md-5 col-sm-5 col-12  sec-4-box">
                         <span>90%</span>
                         <h4>Exceed Sales</h4>
-                        <p>90% of our clients exceed GSA sales requirements, compared to only 50% of other companies.</p>
+                        <p>90% of our clients exceed MGC sales requirements, compared to only 50% of other companies.</p>
                             </div>
                             <div class="col-lg-3 col-md-5 col-sm-5 col-12  sec-4-box">
                                 <span>48+10</span>
@@ -292,19 +323,19 @@
       <section class="section-5">
         <div class="container">
             <h3 class="text-white mb-4">
-                Why Choose Coley GCS?
+                Why Choose MyGovernmentContracts.com ?
             </h3>
-            <p>Partnering with Coley GCS can be pivotal choice for your business. Among the numerous advantages that sets Coley GCS apart from other GSA Schedule consultants, foremost is he opportunity to tap into our over 23 years of extensive experience. Additionally, our proven track record speaks volumes, evidenced by our impressive 98% customer retention rate and 100% GSA Schedule award success rate from hundreds of clients that have benefited from our GSA Schedule assistance. Gain reliable GSA Schedule support with Coley GCS to secure and maintain your GSA Schedule compliant to successfully compete and grow your government business!</p>
+            <p>Partnering with MyGovernmentContracts.com GCS can be pivotal choice for your business. Among the numerous advantages that sets MyGovernmentContracts.com GCS apart from other MGC Schedule consultants, foremost is he opportunity to tap into our over 23 years of extensive experience. Additionally, our proven track record speaks volumes, evidenced by our impressive 98% customer retention rate and 100% MGC Schedule award success rate from hundreds of clients that have benefited from our MGC Schedule assistance. Gain reliable MGC Schedule support with MyGovernmentContracts.com GCS to secure and maintain your MGC Schedule compliant to successfully compete and grow your government business!</p>
             <div class="d-flex justify-content-around mt-5 gap-4">
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4 sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M14.2718 10.445L18 2M9.31612 10.6323L5 2M12.7615 10.0479L8.835 2M14.36 2L13.32 4.5M6 16C6 19.3137 8.68629 22 12 22C15.3137 22 18 19.3137 18 16C18 12.6863 15.3137 10 12 10C8.68629 10 6 12.6863 6 16Z" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <h4>Get on GSA Schedule</h4>
-                    <p class="text-black">Coley GCS will help you with the GSA Schedule contract acquisition process and ensuring your interest are represented for your long term success. We offer flexible solutions that fit your need.</p>
+                    <h4>Get on MGC Schedule</h4>
+                    <p class="text-black">MyGovernmentContracts.com GCS will help you with the MGC Schedule contract acquisition process and ensuring your interest are represented for your long term success. We offer flexible solutions that fit your need.</p>
                 </div>
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4 sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffcc00"><path d="M9 11L12 14L20 6" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C12.9473 4 13.8561 4.16464 14.6994 4.46686" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    <h4>Manage a GSA Schedule</h4>
-                    <p class="text-black">Leverage the experience of a team of GSA Schedule Advisors to keep your contract updated and compliant. Our Turn-Key solution provides Total Support and reduces your administrative burdens and help you maximize your GSA Schedule’s return on investment.</p>
+                    <h4>Manage a MGC Schedule</h4>
+                    <p class="text-black">Leverage the experience of a team of MGC Schedule Advisors to keep your contract updated and compliant. Our Turn-Key solution provides Total Support and reduces your administrative burdens and help you maximize your MGC Schedule’s return on investment.</p>
                 </div>
                 <div class="col-lg-4 col-12 col-sm-12 col-md-4   sec-3-box">
                     <svg width="48px" height="48px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffcc00"><path d="M3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z" stroke="#ffcc00" stroke-width="1.5"></path><path d="M6 18L18 18" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 14V6M12 6L15.5 9.5M12 6L8.5 9.5" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -315,19 +346,394 @@
         </div>
       </section>
       <section class="section-6 pt-0 pb-0">
-      <img width="100%" height="auto"  src="cgcs-speed-2-scaled.webp" alt="not found">
+      <img width="100%" height="350px" style="object-fit: cover;"  src="image181.png" alt="not found">
       </section>
       <section class="section-7">
         <div class="container">
-           <h3> How Does a GSA Schedule Help Grow Government Business?</h3>
-           <p class="text-black mt-4">Federal procurement can be a long and complicated process because buyers are risk adverse. A government buyer’s job is to find the contractors that can perform a task or deliver a product and select the one that poses the least risk possible. This is why GSA Schedule holders, who have already gone through the vetting process, have an advantage.  Most government agencies simply find it easier to purchase from them.</p>
+           <h3> How Does a MGC Schedule Help Grow Government Business?</h3>
+           <p class="text-black mt-4">Federal procurement can be a long and complicated process because buyers are risk adverse. A government buyer’s job is to find the contractors that can perform a task or deliver a product and select the one that poses the least risk possible. This is why MGC Schedule holders, who have already gone through the vetting process, have an advantage.  Most government agencies simply find it easier to purchase from them.</p>
+        <div class="mt-5 d-flex flex-wrap">
+          <div class="col-lg-6 ">
+            <ul>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>Availability to a Growing Market:</h5>
+                  <p class="text-black">By being a vendor to one of the world’s largest customers, a company can reap the benefits and set themselves up for success for years to come.</p>
+                </div>
+              </li>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>Long Term Value:</h5>
+                  <p class="text-black">While a contract is awarded for five years, it is possible for the contract to extend up to 20 years.  Also, there is no limit to the amount of goods or services that can be sold during the contract period</p>
+                </div>
+              </li>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>	
+                    Competitive Advantage:</h5>
+                  <p class="text-black">Buyers already know that companies with a MGC Schedule have met strict requirements and are reliable.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 ">
+            <ul>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>Expand your Reach:</h5>
+                  <p class="text-black">Not only can a company sell to the federal government, but security and technology businesses can also sell to state and local government entities, and public schools as well.</p>
+                </div>
+              </li>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>Open Avenues to Revenue:</h5>
+                  <p class="text-black">A MAS allows a vendor to also seek out other opportunities through published Request for Proposals (RFP) and Requests for Quotes (RFQ).</p>
+                </div>
+              </li>
+              <li>
+                <div><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <h5>	
+                    Increased Credibility:</h5>
+                  <p class="text-black">Having a MGC Schedule means that government entities will receive the best possible price.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+          </div>
+      </section>
+      <section class="section-8">
+        <div class="container">
+          <h3>Our Clients</h3>
+        <p class="text-black">We support contractors reach federal agencies by helping them secure a MGC multiple award schedule. Our clients encompass a wide range of businesses, from small enterprises to large corporations, across various industries. As MGC schedule consultants, we specialize in supporting contractors win and help them leverage their MGC schedule contracts to succeed in government contracting.</p>
+      <button>More Client Kukdos</button>  
+      <div class="mt-5 d-flex flex-wrap justify-content-around">
+        <div class="col-lg-3">
+          <h2 class="text-center mb-4" >Responsive</h2>
+            <div>
+              <p>We had our MGC Schedule compliance visit and passed with a perfect score.  This is due in large part to the efforts of the MyGovernmentContracts.com’s MGC Schedule consultants leading up to the visit and even made yourselves available by phone during MGC’s visit. We are certainly glad to be working with your team and appreciate their diligence in keeping us straight.<br><br>
+                <strong>CEO</strong><br>
+              Water Purification Solutions
+              </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="text-center mb-4" >Reliable</h2>
+            <div>
+              <p>Jack, Dan:  Thanks so much!!! Your team of contract consultants are simply the best. There is nothing like coming through for a customer at the 11th hour and that’s what you’ve just done for us.  I can’t adequately convey the peace of mind it gives us to know that we can turn to you and be assured of getting sound advice.<br><br>
+                <strong>CEO</strong><br>
+                Professional Services Firm
+              </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="text-center mb-4" >Knowledgable</h2>
+            <div>
+              <p>I swear, calling MyGovernmentContracts.com GCS was the best phone call I’ve made in the last 5 years!  It keeps paying off… Thanks for the effort!.<br><br>
+                <strong>CEO</strong><br>
+                Director at The Cook & Boardman Group, LLC,
+              </p>
+            </div>
+        </div>
+      </div>
+      </div>
+        
+      </section>
+      <section class="section-9">
+        <div class="container">
+          <h3>Is a MGC Schedule Right For My Business?</h3>
+          <p class="text-black mt-4">A MGC Schedule is a 5-year contract with 3 options to renew for a potential 20-year contract lifespan.  In addition to basic questions to determine if your business is eligible to get a MGC Schedule, there are additional factors to consider determining if this is the right time for your business to pursue a MGC Schedule contract to ensure your long term success.  One of the first questions we ask when companies reach out looking to get on MGC is <strong>why do you want a MGC Schedule? </strong></p>
+          <div class="mt-5 d-flex flex-wrap">
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">How Familiar are you with Selling to Government Agencies?</p></div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">Are your competitors successfully selling through their MGC Schedule?</p></div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">Do you have the time and resources dedicated to pursuing new government business?</p></div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">Does the agency you are targeting currently purchase from MGC Schedule holders?</p></div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">Is your government customer asking you how to get a MGC Schedule?</p></div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa-solid fa-question"></i>
+                  </div>
+                 <div> <p class="text-black">	
+                  Are you familiar with MGC Schedule holder's compliance requirements?</p></div>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="sec-9-box">
+            <h2 class="mb-4 text-black">Getting on MGC Schedule is just the beginning</h2>
+            <p> Once you get a MGC Schedule contract, you must remain complaint.  If a contractor fails to meet the minimum sales requirements or are not keeping up with reporting and compliance actions, you run the risk of having your MGC Schedule cancelled.</p>
+            <p>Getting a MGC Schedule will no doubt open companies to new markets, but you should prepare for the costs associated with Schedule ownership. Some may consider having boots on the ground to grow government business. Others will determine if they outsource or manage internally the compliance of a MGC contract.</p>
+            <p>At MyGovernmentContracts.com, we have built long term partnerships with our clients. During our initial free consultation, we discuss your plans for the resources needed to have long term success with the acquisition of your MGC Schedule.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-10">
+        <div class="container">
+          <h3 class="mb-4">MyGovernmentContracts.com Serves</h3>
+          <p class="text-black">Government buyers utilize the multiple award schedule overseen by the General Services Administration (MGC) to procure goods and services from vendors holding MGC contracts. MyGovernmentContracts.com supports customers across diverse industries with federal acquisition service, consulting, and facilitates MGC modifications and contract management.</p>
+        <div class="portfolio-btns">
+          <ul>
+            <li>
+              <a href="#" class="active " onclick="portfolio(event)">All</a>
+            </li>
+            <li>
+              <a href="#"  onclick="portfolio(event)">Industries</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between mt-5 flex-wrap gap-4">
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="TribalEnterprises-400x284.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Tribal Enterprises</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="disasterrelief.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Disaster Relief</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="hospitalitycleaning.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Hospitality & Cleaning</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="wildland.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Wildland Fire</p>
+  <span>Industries</span>
+
+          </div>
+          </div>
+          <div class="d-flex justify-content-between mt-5 flex-wrap gap-4">
+        
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="itsolutions.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Electronics</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="lawenforcement-1.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Security</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="officesolutions.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Office Solutions</p>
+  <span>Industries</span>
+
+          </div>
+          <div class="sec-10-box  ">
+            <div class="position-relative sec-10-boxes">
+       <img src="toolshardware.webp"  alt="not"> 
+       <div class="overlay">
+
+       </div>      
+            </div>
+
+<p class="text-black mt-3 mb-0">
+  Hardware & Tools</p>
+  <span>Industries</span>
+
+          </div>
+        </div>
+        </div>
+       
+        </div>
+      </section>
+      <section class="section-11">
+        <div class="container">
+          <h3>MyGovernmentContracts.com GCS Insights</h3>
+          <p class="text-black mt-3">Quick and timely access to authoritative information… regularly visited  by government <br> contracting representatives
+
+            .</p>
+            <div class="mt-5 d-flex gap-5 flex-wrap">
+              <div class="sec-11-boxes">
+                <img src="Assessing-Win-Probability-Bid-NoBid-400x250.webp" alt="not">
+                <div class="ps-3 pe-3 pt-3">
+                  <h6>Assessing Win Probability: Bid or No Bid</h6>
+                  <p>How can a Bid/No Bid analysis will help determine if the projected cost of building a response makes sense for a particular solicitation? Follow this process to help your company decide.</p>
+                </div>
+                
+              </div>
+              <div class="sec-11-boxes">
+                <img src="GSA-Complementary-SINs-400x250.webp" alt="not">
+                <div class="ps-3 pe-3 pt-3">
+                  <h6>Assessing Win Probability: Bid or No Bid</h6>
+                  <p>How can a Bid/No Bid analysis will help determine if the projected cost of building a response makes sense for a particular solicitation? Follow this process to help your company decide.</p>
+                </div>
+                
+              </div>
+              <div class="sec-11-boxes">
+                <img src="Compete-NASA-SEWP-VI-400x250.webp" alt="not">
+                <div class="ps-3 pe-3 pt-3">
+                  <h6>Assessing Win Probability: Bid or No Bid</h6>
+                  <p>How can a Bid/No Bid analysis will help determine if the projected cost of building a response makes sense for a particular solicitation? Follow this process to help your company decide.</p>
+                </div>
+                
+              </div>
+            </div>
+           <button class="mt-5">Read More</button>
         </div>
       </section>
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <div  class="footer">
+      <div class="container">
+    <div class="col-lg-3 ps-4 ps-lg-0 col-12">
+      <img src="IMG_5632.png" alt="not" height="45px">
+<p class="mt-2 mb-1">Celebrating Over 29 Years of Making a Difference</p>
+<p class="mb-1">18911 Hardy Oak Blvd. Ste 180
+  San Antonio, TX 78258</p>
+  <span style="color: #0065a4;">(407) 561-2094</span><br>
+  <span style="color: #0065a4;">hello@MyGovernmentContracts.com</span>
+    </div>
+    <div class="col-lg-3 col-12">
+      <ul>
+        <li class="active">Management</li>
+        <li>MGC Contract Management</li>
+        <li>Modify my MGC Schedule</li>
+        <li>Upload my MGC Catalog</li>
+        <li>Comply with my MGC Schedule</li>
+        <li>Renew my MGC Schedule</li>
+        <li>Transfer my MGC Schedule</li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-12">
+      <ul>
+        <li class="active"> Resources</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+        <li>Join FedMap
+        </li>
+        <li>Frequently Asked Questions</li>
+        <li>On-Demand Consulting</li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-12">
+      <ul>
+        <li class="active">Company</li>
+        <li>Our Values</li>
+        <li>MyGovernmentContracts.com Team</li>
+        <li>Careers</li>
+        <li>Industries Served</li>
+        <li>Testimonials</li>
+      </ul>
+    </div>
+  </div>
+    </div>
+    <div class="footer-2">
+      <div class="container d-flex flex-wrap">
+        <div class="col-lg-7 col-12 pb-lg-4">
+          <h3 class="fw-lighter  text-center text-white">29 years of supporting federal business</h3>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center d-lg-block justify-content-lg-normal col-12 pb-lg-4 ">
+          <button onclick="window.location='consultation.html'">Book Your Free Consulation</button>
+        </div>
+        <div class=" footer-3">
+          <div class="col-lg-4">
+            <p>© 2024 MGC. All Rights Reserved</p>
+          </div>
+          <div class="col-lg-2 d-flex gap-4">
+            <p>Privacy Policy
+              </p>
+              <p>
+                Site Map</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

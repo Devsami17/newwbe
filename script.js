@@ -113,4 +113,13 @@ class Accordion {
   document.querySelectorAll("details").forEach((el) => {
     new Accordion(el);
   });
+  function portfolio(event) {
+    event.preventDefault(); 
+    
+
+    const links = document.querySelectorAll('ul li a');
+    links.forEach(link => link.classList.remove('active'));
+    
   
+    event.currentTarget.classList.add('active');
+  }

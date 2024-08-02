@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <main class="consultation-page position-relative">
+            <div class="main-consultation  container">
+                <div class=" consultation">
+                    <div class="part-1">
+                        <div class="logo">
+                            <img src="cgcs_logo.svg" alt="not found" height="70px">
+                        </div>
+                        <div class="content">
+                            <h6>Coley GCS</h6>
+                            <h2>Discuss Your Contracting Questions</h2>
+                            <i class="fa-regular fa-clock"></i><span>30 min</span><br>
+                            <i class="fa-solid fa-video mt-4"></i><span>Web conferencing details provided upon confirmation.</span>
+                        </div>
+                        <div class="footer">
+                            <a href="">Report abuse</a>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <div class="part-2-calender">
+                           <h2>Select Date & Time  </h2>
+<div class="main-calender">
+    <div class="container">
+        <div class="right-part">
+            <div class="controls">
+                <button id="prev">
+                    <span>
+                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.4806 15.9941C13.8398 15.6529 13.8398 15.0998 13.4806 14.7586L8.47062 10L13.4806 5.24142C13.8398 4.90024 13.8398 4.34707 13.4806 4.00589C13.1214 3.66471 12.539 3.66471 12.1798 4.00589L6.51941 9.38223C6.1602 9.72342 6.1602 10.2766 6.51941 10.6178L12.1798 15.9941C12.539 16.3353 13.1214 16.3353 13.4806 15.9941Z" fill="currentColor"></path></svg>
+                    </span>
+                </button>
+                <span class="month-year" id="month-year"></span>
+                <button id="next">
+                    <span>
+                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.51941 15.9941C6.1602 15.6529 6.1602 15.0998 6.51941 14.7586L11.5294 10L6.51941 5.24142C6.1602 4.90024 6.1602 4.34707 6.51941 4.00589C6.87862 3.66471 7.46101 3.66471 7.82022 4.00589L13.4806 9.38223C13.8398 9.72342 13.8398 10.2766 13.4806 10.6178L7.82022 15.9941C7.46101 16.3353 6.87862 16.3353 6.51941 15.9941Z" fill="currentColor"></path></svg>
+                    </span>
+                </button>
+            </div>
+            <div class="calendar" id="calendar"></div>
+        </div>
+    </div>
+</div>
+<div class=" time-zone">
+   <h2 >Time Zone</h2>
+   <select name="timezones" id="timezones">
+    <option value="Pakistan, Maldives Time (12:42pm)" selected>Pakistan, Maldives Time (12:42pm)</option>
+    <option value="Eastern Standard Time ( 2:42am)">Eastern Standard Time ( 2:42am)</option>
+    <option value="Pacific Standard Time (11:42pm)">Pacific Standard Time (11:42pm)</option>
+    <option value="Greenwich Mean Time   ( 7:42am)">Greenwich Mean Time   ( 7:42am)</option>
+    <option value="Central European Time ( 8:42am)">Central European Time ( 8:42am)</option>
+    <option value="India Standard Time   ( 1:12pm)">India Standard Time   ( 1:12pm)</option>
+    <option value="JJapan Standard Time   ( 4:42pm)">Japan Standard Time   ( 4:42pm)</option>
+    <option value="Australian Eastern Time ( 5:42pm)">Australian Eastern Time ( 5:42pm)</option>
+    <option value="China Standard Time   ( 3:42pm)">China Standard Time   ( 3:42pm)</option>
+    <option value="Moscow Standard Time  (10:42am)">Moscow Standard Time  (10:42am)</option>
+    <option value="Brasilia Time         ( 3:42am)">Brasilia Time         ( 3:42am)</option>
+    <option value="East Africa Time      (10:42am)">East Africa Time      (10:42am)</option>
+    <option value="South Africa Time    ( 9:42am)">South Africa Time    ( 9:42am)</option>
+    <option value="New Zealand Time     ( 7:42pm)">New Zealand Time     ( 7:42pm)</option>
+    <option value="Korea Standard Time   ( 4:42pm)">Korea Standard Time   ( 4:42pm)</option>
+    <option value="Singapore Time        ( 3:42pm)">Singapore Time        ( 3:42pm)</option>
+    <option value="West Africa Time      ( 8:42am)">West Africa Time      ( 8:42am)</option>
+    <option value="Mountain Standard Time(12:42am)">Mountain Standard Time(12:42am)</option>
+    <option value="Alaska Standard Time (10:42pm)">Alaska Standard Time (10:42pm)</option>
+    <option value="Hawaii Standard Time  ( 9:42pm)">Hawaii Standard Time  ( 9:42pm)</option>
+</select>
+
+</div> 
+                        </div>
+                        <div class="timing" id="timing">
+                            <span id="selected-date">Thursday, August 8</span>
+                        <div class="d-flex flex-column mt-4">
+                            <div class="timing-boxes">
+                                <button>12:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>12:30am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>1:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>1:30am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>2:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>8:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>8:30am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>9:30am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>10:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>10:30am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>11:00am</button>
+                            </div>
+                            <div class="timing-boxes">
+                                <button>11:30am</button>
+                            </div>
+                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-consultation-2 container">
+                <div class=" consultation">
+                    <div class="part-1">
+                        <div class="logo">
+                            <img src="cgcs_logo.svg" alt="not found" height="70px">
+                        </div>
+                        <div class="content">
+                            <h6>Coley GCS</h6>
+                            <h2>Discuss Your Contracting Questions</h2>
+                            <i class="fa-regular fa-clock"></i><span>30 min</span><br>
+                            <i class="fa-solid fa-video mt-4"></i><span>Web conferencing details provided upon confirmation.</span><br>
+                            <i class="fa-regular fa-calendar mt-4"></i><span id="second-time"></span><br>
+                            <i class="fa-solid fa-globe mt-4"></i><span id="region"></span>
+                        </div>
+                     
+                    </div>
+                    <div class="part-2">
+                     
+<h2>Enter Details</h2><br>
+<form id="schedule-form" action="confirm.html">
+    <div class="inp-group">
+        <label>Full Name</label>
+        <input type="text" required>
+    </div>
+
+    <div class="inp-group mt-4">
+        <label>Email Address</label>
+        <input type="email" required>
+    </div>
+    <div class="mb-3 mt-4 inp-group">
+        <label>Please share anything that will help prepare for our meeting.</label>
+        <textarea></textarea>
+    </div>
+    <span>
+        By proceeding, you confirm that you have read and agree to <br> Calendly's <span style="color: rgb(0, 105, 255);">Terms of Use</span> and <span style="color: rgb(0, 105, 255);"> Privacy Notice.</span>
+    </span><br>
+    <button type="submit" id="submit-button">
+        Schedule Event
+        <div class="loader" id="loader"></div>
+    </button>
+</form>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+const calendarEl = document.getElementById('calendar');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const monthYearEl = document.getElementById('month-year');
+const selectedDateEl = document.getElementById('selected-date');
+const region = document.getElementById("region");
+
+
+let currentMonth = new Date().getMonth();
+let currentYear = new Date().getFullYear();
+let selectedDateCell = null;
+
+// Get current date
+const today = new Date();
+const todayDay = today.getDate();
+const todayMonth = today.getMonth();
+const todayYear = today.getFullYear();
+
+const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+function updateMonthYear() {
+    monthYearEl.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+}
+
+function generateCalendar(month, year) {
+    calendarEl.innerHTML = '';
+
+    dayNames.forEach(day => {
+        const dayNameCell = document.createElement('div');
+        dayNameCell.textContent = day;
+        dayNameCell.classList.add('day-name');
+        calendarEl.appendChild(dayNameCell);
+    });
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    for (let i = 0; i < firstDay; i++) {
+        const emptyCell = document.createElement('div');
+        calendarEl.appendChild(emptyCell);
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+        const dayCell = document.createElement('div');
+        dayCell.textContent = day;
+        dayCell.classList.add('day');
+        if (new Date(year, month, day).getDay() === 0) {
+            dayCell.classList.add('sunday');
+        } else {
+            dayCell.addEventListener('click', () => selectDate(dayCell, day));
+        }
+        calendarEl.appendChild(dayCell);
+
+        // Highlight current date
+        if (day === todayDay && month === todayMonth && year === todayYear) {
+            selectDate(dayCell, day);
+        }
+    }
+}
+
+function selectDate(dayCell, day) {
+    if (selectedDateCell) {
+        selectedDateCell.classList.remove('selected');
+    }
+    dayCell.classList.add('selected');
+    selectedDateCell = dayCell;
+    selectedDateEl.textContent = `${dayNames[new Date(currentYear, currentMonth, day).getDay()]}, ${monthNames[currentMonth]} ${day}`;
+    document.getElementById('second-time').textContent=`${monthNames[currentMonth]} ${day} , ${dayNames[new Date(currentYear, currentMonth, day).getDay()]}`;
+}
+
+prevBtn.addEventListener('click', () => {
+    if (currentMonth > new Date().getMonth() || currentYear > new Date().getFullYear()) {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        updateMonthYear();
+        generateCalendar(currentMonth, currentYear);
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    currentMonth++;
+    if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+    }
+    updateMonthYear();
+    generateCalendar(currentMonth, currentYear);
+});
+
+updateMonthYear();
+generateCalendar(currentMonth, currentYear);
+
+// Time selection logic
+document.querySelectorAll('.timing-boxes button').forEach(button => {
+    button.addEventListener('click', function() {
+        const parent = this.parentElement;
+        
+       
+        document.querySelectorAll('.timing-boxes').forEach(box => {
+            box.classList.remove('split');
+            
+ 
+            const existingExtraButton = box.querySelector('.extra-button');
+            if (existingExtraButton) {
+                existingExtraButton.remove();
+            }
+        });
+
+        if (!parent.classList.contains('split')) {
+            parent.classList.add('split');
+            
+           
+            if (!parent.querySelector('.extra-button')) {
+                const newButton = document.createElement('button');
+                newButton.className = 'extra-button';
+                newButton.textContent = 'Next'; 
+                parent.appendChild(newButton);
+                newButton.addEventListener("click",()=>{
+                    document.querySelector('.main-consultation').style.display="none";
+                    document.querySelector('.main-consultation-2').style.display="flex";
+                })
+            }
+        }
+    });
+});
+var time_zones = document.getElementById('timezones').value;
+region.textContent = time_zones;
+document.getElementById('timezones').addEventListener('change', function() {
+            const timingDivs = document.querySelectorAll('.timing-boxes');
+            
+          
+            timingDivs.forEach(div => div.classList.add('hidden'));
+
+            // Show all timing-boxes divs after 500 milliseconds
+            setTimeout(() => {
+                timingDivs.forEach(div => div.classList.remove('hidden'));
+            }, 800);
+        });
+        document.getElementById('schedule-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var loader = document.getElementById('loader');
+            loader.style.display = 'inline-block';
+
+            setTimeout(function() {
+                document.getElementById('schedule-form').submit();
+            }, 5000);
+        });
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        
+    </body>
+</html>
