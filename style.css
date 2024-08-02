@@ -223,6 +223,7 @@ width: 100% !important;
 }
 .consultation-page{
     margin-top: 10px !important;
+    margin-bottom: 1700px !important;
 }
 .main-consultation .part-1{
     width: 100% !important;
@@ -847,7 +848,8 @@ font-weight: 400;
 }
 .consultation-page{
     padding-top: 30px;
-    
+    margin-top: 100px !important;
+    margin-bottom: 600px;
 }
 .main-consultation-2{
     display: none;
