@@ -1577,7 +1577,7 @@ font-family: "Poppins";
         color: #fff;
         transition:all 200ms ease-in;
     }
-    .course-detail h2{
+    .course-detail h2 , .section-22 h4{
         font-family: "Raleway" !important;
         font-weight: 800;
         font-size: 24px !important;
@@ -1587,6 +1587,9 @@ font-family: "Poppins";
     .learning-box{
         border: 1px solid #d1d7dc;
         padding: 24px 20px;
+    }
+    .section-22 p{
+        margin-top: 5px;
     }
     .learning-box ul li , .section-25 ul li , .section-26 ul li {
         list-style: none;
